@@ -9,5 +9,8 @@ app.use(express.json())
 app.get('/',async(req,res)=>{
     res.send('Danriyal solution server is running.')
 })
+app.get('/test',async(req,res)=>{
+    res.send('Danriyal solution server test is successful.')
+})
 
 app.listen(port,()=>console.log(`server running on port ${port}`))
